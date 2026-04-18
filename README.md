@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+#  React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Description
 
-Currently, two official plugins are available:
+A simple and functional Todo application built with React.
+This project allows users to manage daily tasks by adding, deleting, and marking tasks as completed. It was created as a practice project to strengthen React fundamentals and state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+##  Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*  Add new tasks
+*  Delete tasks
+*  Mark tasks as completed
+*  Simple and intuitive UI
+*  Responsive design
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+##  Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* React (useState, components)
+* JavaScript (ES6+)
+* HTML5
+* CSS3
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+##  Project Purpose
+
+This project was built to practice:
+
+* React component structure
+* State management with hooks
+* Event handling in React
+* Building simple interactive UI applications
+
+---
+
+##  Screenshots
+
+*(Add screenshots of the app here — very recommended)*
+
+---
+
+##  Installation & Setup
+
+```bash id="v3kq2m"
+git clone https://github.com/Doletavshiy/react-todo-app.git
+cd react-todo-app
+npm install
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+##  Future Improvements
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Add local storage to persist tasks
+* Add task filtering (All / Active / Completed)
+* Improve UI/UX design
+* Add drag & drop functionality
+* Add backend support for user accounts
+
+---
+
+##  What I Learned
+
+* Basics of React development
+* Managing state with hooks
+* Creating reusable components
+* Handling user interactions
