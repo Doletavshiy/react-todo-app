@@ -37,9 +37,8 @@ This project was built to practice:
 
 ---
 
-##  Screenshots
-
-*(Add screenshots of the app here — very recommended)*
+##  Live Demo
+https://doletavshiy.github.io/react-todo-app/
 
 ---
 
